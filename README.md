@@ -173,7 +173,7 @@ Workload: 10 000-entry cache, 1 000 ops per iteration.
 | `get_hit` — all hits, hot path | **27.0 M/s** | 12.4 M/s | 130.9 M/s |
 | `insert_evicting` — all-new keys | **3.96 M/s** | 1.75 M/s | 23.6 M/s |
 | `mixed_80r_20w` — 80 % reads | **12.6 M/s** | 4.3 M/s | 49.6 M/s |
-| `concurrent_8t` — 8 threads, 50 % reads | **7.3 M/s** | — | — |
+| `concurrent_8t` — 8 threads, 50 % reads | **7.3 M/s** | 2.6 M/s | 30.7 M/s |
 
 **Doppio is ~2–3× faster than Moka** across all workloads.  QuickCache is
 faster still because its S3-FIFO algorithm is structurally simpler than
